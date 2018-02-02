@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';//para poder usar ngModel
 
 import { AppComponent } from './app.component';
+import { MoviesComponent } from './Components/movies/movies.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoviesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
