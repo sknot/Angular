@@ -1,0 +1,19 @@
+<div>
+  <h1>Edición de película</h1>
+  <p>
+    <input type="text" placeholder="Título de la película: " [(ngModel)] = "movie.title">
+  </p>
+
+  <p>
+    <textarea placeholder="Descripción de la película: " [(ngModel)] = "movie.descripcion">
+    </textarea>
+  </p>
+
+  En Angular, todo es "observable"
+  <p>
+    {{movie.title}}
+  </p>
+  <p>
+    {{movie.descripcion}}
+  </p>
+</div>
