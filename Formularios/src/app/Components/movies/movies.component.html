@@ -1,4 +1,6 @@
 <div>
+  <!-- PRIMER EJERCICIO -->
+<!--   
   <h1>Edición de película</h1>
   <p>
     <input type="text" placeholder="Título de la película: " [(ngModel)] = "movie.title">
@@ -7,13 +9,50 @@
   <p>
     <textarea placeholder="Descripción de la película: " [(ngModel)] = "movie.descripcion">
     </textarea>
+    
   </p>
 
-  En Angular, todo es "observable"
+  <p *ngIf="this.movie.title.length > 0 && this.movie.descripcion.length > 0 && this.movie.descripcion.length > 10">
+    El formulario está correcto!
+    <br><br>
+    <button (click)="clickHandler()">Click!</button>
+  </p>
+
+  <p *ngIf="this.movie.title.length == 0 || this.movie.descripcion.length == 0">
+    El formulario NO está correcto!
+  </p>
+
+  <p *ngIf="this.movie.descripcion.length < 10">
+    Minimo 10 caracteres.
+  </p> -->
+
+  <!-- En Angular, todo es "observable"
   <p>
     {{movie.title}}
   </p>
   <p>
     {{movie.descripcion}}
-  </p>
+  </p> -->
+
+  <!-- SEGUNDO EJERCICIO -->
+  <!-- <div>
+    <p style="font-size:25px; font-style: blond" >Películas:</p>
+    <ol>
+      <li *ngFor="let movie of movies"
+      (click)="displayDetail(movie)"
+      value="movie.id" style="cursor: pointer; font-size:18px; font-style: italic; ">
+        {{movie.title}} / {{movie.descripcion}}
+      </li>
+    </ol>
+  </div> -->
+
+  <!-- TERCER EJERCICIO -->
+  Películas
+
+  <app-movie-item-component *ngFor="let movie of movies"
+                            [movie]="movie"
+                            [directorInput]="movie.director"
+                            [categoriaInput]="movie.categoria"
+                            (click)="displayDetail(movie)">
+  </app-movie-item-component>
 </div>
