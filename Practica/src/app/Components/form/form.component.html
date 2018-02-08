@@ -1,0 +1,17 @@
+<div>
+  <h3>Nueva Películas</h3>
+  <p> 
+    <input type="text"
+    placeholder="Título de la película"
+    [(ngModel)]="movieModel.title"
+    >
+  </p>
+  <p>
+    <textarea cols="30" rows="10"
+    [(ngModel)]="movieModel.descripcion"
+    ></textarea>
+  </p>
+  <p *ngIf="movieModel.title.length > 0 && this.movieModel.descripcion != ''">
+    <button (click)="SaveMovie()">Guardar</button>
+  </p>
+</div>  

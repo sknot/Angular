@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-3">
+        &nbsp;
+        <img src="assets/Detail.png" height="30" style="cursor:pointer" routerLink="/movieDetail/{{pelicula._id}}">
+        &nbsp;
+        <img src="assets/Delete.png" height="30" style="cursor:pointer" (click)="deleteMovie()">
+        &nbsp;
+        <img src="assets/Update.ico" height="30" style="cursor:pointer" routerLink="/movieEdit/{{pelicula._id}}">
+    </div>
+    <div class="col-md-3">
+        <img src="https://lorempizza.com/100/100" />
+    </div>
+    <div class="col-md-3">
+        {{pelicula.title}}
+    </div>
+    <div class="col-md-3">
+        {{pelicula.descripcion}}
+    </div>
+  </div>
+  <br>

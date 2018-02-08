@@ -1,0 +1,23 @@
+<div>
+  <h3>Editar Pelicula</h3>
+  <p> 
+      <input type="text"
+      [(ngModel)]="movie._id"
+      disabled="disabled"
+      >
+    </p>
+  <p> 
+    <input type="text"
+    placeholder="Título de la película"
+    [(ngModel)]="movie.title"
+    >
+  </p>
+  <p>
+    <textarea cols="30" rows="10"
+    [(ngModel)]="movie.descripcion"
+    ></textarea>
+  </p>
+  <p *ngIf="movie.title.length > 0 && this.movie.descripcion != ''">
+    <button (click)="UpdateMovie(movie)">Actualizar</button>
+  </p>
+</div>  
