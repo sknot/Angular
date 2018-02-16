@@ -1,0 +1,32 @@
+.fonth8 {
+    color: #ffffff !important;
+    font-family: Arial !important;
+    font-size: 35px !important;
+}
+
+.MasterTopPanel {
+    background-color: #d85936 !important;
+    color: #ffffff !important;
+}
+
+.MasterContentPanel
+{
+    height: 80vh;
+}
+
+.MasterFooterPanel
+{
+    background-color: #d85936 !important;
+    color: #ffffff !important;
+}
+
+.Titulo{
+    margin-top: 30px;
+    vertical-align: middle;
+}
+
+.LoginPanel
+{
+    width: 20%;
+    height: 80vh;
+}

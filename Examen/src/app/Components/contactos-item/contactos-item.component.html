@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-md-8 fonth1" align="left">
+                {{this.contacto.Nombre}}
+                <br>
+                {{this.contacto.Telefono}}
+            </div>
+            <div class="col-md-2">
+                <img src="assets/Edit.png" height="50" style="cursor:pointer" routerLink="/nuevo_contacto/{{this.id}}/{{this.contacto._id}}">
+            </div>
+            <div class="col-md-2">
+                <img src="assets/Delete.png" height="50" style="cursor:pointer" (click)="deleteContacto()">
+            </div>
+        </div>
+    </div>
+</div>
+<br>

@@ -1,0 +1,28 @@
+.fonth8 {
+    color: black !important;
+    font-family: Arial !important;
+    font-size: 35px !important;
+}
+
+
+.MasterTopPanel {
+    background-color: #d85936 !important;
+    color: #ffffff !important;
+}
+
+.MasterContentPanel
+{
+    height: 80vh;
+}
+
+.MasterFooterPanel
+{
+    background-color: #d85936 !important;
+    color: #ffffff !important;
+    height: 5vh;
+}
+
+.imgFoto{
+    height: 150px;
+    width: 150px;
+}

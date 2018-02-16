@@ -1,0 +1,42 @@
+<div class="panel panel-default">
+  <div class="panel-heading MasterTopPanel">
+    <app-cabecera></app-cabecera>
+  </div>
+
+  <div class="panel-body MasterContentPanel align-center" align="center">
+    
+    <div class="col-md-4" align="center">
+      <app-menu></app-menu>
+    </div>
+
+    <div class="col-md-8" align="center">
+      
+      <div class="form-group NuevoContactoPanel" align="left">
+
+        <br><br><br>
+        <input type="text" class="form-control" placeholder="Nombre de contacto" [(ngModel)]="contacto.Nombre">
+        <br>
+        <input type="number" class="form-control" placeholder="Teléfono" [(ngModel)]="contacto.Telefono">
+        <br>
+
+        <div class="col-md-12" align="left">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-danger btnNuevoContacto" routerLink="/contactos/{{this.id}}">Cancelar</button>
+          </div>
+          <div class="col-md-6">
+            <p *ngIf="this.contacto.Nombre.length != 0 && this.contacto.Telefono.length != 0">
+              <button type="button" class="btn btn-success btnNuevoContacto" (click)="guardarContacto()">Guardar</button>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+
+  <div class="panel-footer align-center MasterFooterPanel" align="center">
+      <app-pie-pag></app-pie-pag>
+  </div>
+</div>

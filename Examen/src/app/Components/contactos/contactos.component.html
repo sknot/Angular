@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+  <div class="panel-heading MasterTopPanel">
+    <app-cabecera></app-cabecera>
+  </div>
+
+  <div class="panel-body MasterContentPanel align-center" align="center">
+    
+    <div class="col-md-4" align="center">
+      <app-menu></app-menu>
+    </div>
+
+    <div class="col-md-8" align="center">
+      <div class="ex4">
+        <app-contactos-item *ngFor="let datos of contactosModel"
+        [contacto]="datos"></app-contactos-item>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="panel-footer align-center MasterFooterPanel" align="center">
+      <app-pie-pag></app-pie-pag>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.MasterTopPanel {
+    background-color: #d85936 !important;
+    color: #ffffff !important;
+}
+
+.MasterContentPanel
+{
+    height: 80vh;
+}
+
+.MasterFooterPanel
+{
+    background-color: #d85936 !important;
+    color: #ffffff !important;
+    height: 5vh;
+}
+
+div.ex4 {
+    height: 70vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

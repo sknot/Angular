@@ -1,0 +1,28 @@
+.MasterTopPanel {
+    background-color: #d85936 !important;
+    color: #ffffff !important;
+}
+
+.MasterContentPanel
+{
+    height: 80vh;
+}
+
+.MasterFooterPanel
+{
+    background-color: #d85936 !important;
+    color: #ffffff !important;
+    height: 5vh;
+}
+
+.NuevoContactoPanel
+{
+    width: 50%;
+    height: 80vh;
+}
+
+.btnNuevoContacto{
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+}

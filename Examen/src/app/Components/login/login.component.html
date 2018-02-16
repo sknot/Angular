@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+  <div class="panel-heading MasterTopPanel">
+    <div class="row">
+      <div class="col-md-2">
+          <img src="assets/Logo.png" height="100px" width="150px" >
+      </div>
+      <div class="col-md-10 Titulo" align="left">
+          <p class="fonth8" style="vertical-align: middle;">Contactos</p>
+        </div>
+    </div>
+  </div>
+  <div class="panel-body MasterContentPanel align-center" align="center">
+    <div class="LoginPanel" align="left">
+      <h1>Iniciar Sesión</h1>
+      <div class="form-group">
+        <label for="usr">Name:</label>
+        <input type="text" class="form-control" id="usr" [(ngModel)]="this.usuario">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" [(ngModel)]="this.password">
+      </div>
+      <button (click)="OnClick_Login()" class="btn btn-default">Aceptar</button>
+    </div>
+  </div>
+  <div class="panel-footer align-center MasterFooterPanel" align="center">
+      Confidencial | Portal de Contactos | Towa
+  </div>
+</div>

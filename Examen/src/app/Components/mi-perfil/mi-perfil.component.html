@@ -1,0 +1,40 @@
+<div class="panel panel-default">
+  <div class="panel-heading MasterTopPanel">
+    <app-cabecera></app-cabecera>
+  </div>
+
+  <div class="panel-body MasterContentPanel align-center" align="center">
+    
+    <div class="col-md-4" align="center">
+      <app-menu></app-menu>
+    </div>
+
+    <div class="col-md-4" align="center">
+      <div class="panel panel-default">
+        <div class="panel-body" align="left">{{this.datosUsuario.Nombre}}</div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body" align="left">{{this.datosUsuario.Domicilio}}</div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body" align="left">{{this.datosUsuario.Otros}}</div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body" align="left">{{this.datosUsuario.GustosHobies}}</div>
+      </div>
+    </div>
+
+    <div class="col-md-4" align="center">
+      <img src="{{this.datosUsuario.Foto}}" alt="{{this.datosUsuario.Foto}}">
+      <p class="fonth8" style="vertical-align: middle;">Foto</p>
+    </div>
+    
+  </div>
+
+  <div class="panel-footer align-center MasterFooterPanel" align="center">
+      <app-pie-pag></app-pie-pag>
+  </div>
+</div>
